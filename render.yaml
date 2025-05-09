@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: AirClone 
+    env: node
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: npm start
