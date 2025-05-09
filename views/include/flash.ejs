@@ -1,0 +1,13 @@
+<% if(message&&message.length){%>
+    <div class="alert alert-success nav-items-center" role="alert">
+        <%=message%>
+      </div>
+<%   }%>
+<% if(error&&error.length){%>
+  <div class="alert alert-success nav-items-center" role="alert">
+      <%=error%>
+    </div>
+    <!-- <div class="alert alert-success nav-items-center" role="alert">
+      <%=notlogin%>
+    </div> -->
+<%   }%>

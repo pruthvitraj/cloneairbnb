@@ -1,0 +1,67 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg,#9aa2ff, #fad0c4);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Center Content */
+form {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Input Fields */
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    outline: none;
+    border-color: #66a6ff;
+    box-shadow: 0 4px 8px rgba(102, 166, 255, 0.2);
+}
+
+/* Button Styling */
+form button {
+    width: 100%;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
