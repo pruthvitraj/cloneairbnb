@@ -3,7 +3,7 @@ services:
     name: cloneairbnb
     env: node
     branch: main
-    # buildCommand: npm install
+    buildCommand: 
     
     startCommand: npm start
     autoDeploy: true
