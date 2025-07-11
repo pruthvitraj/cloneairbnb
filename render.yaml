@@ -3,8 +3,7 @@ services:
     name: cloneairbnb
     env: node
     branch: main
-    buildCommand: 
-    
+   buildCommand: true
     startCommand: npm start
     autoDeploy: true
     plan: free
