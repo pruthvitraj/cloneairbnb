@@ -3,7 +3,7 @@ const data = require("./creation_of_data");
 
 // connection of monogodb;
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/showlist')
+    await mongoose.connect('mongodb+srv://pruthvipatil0058:patil0058@cluster0.r6iz0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 }
 main().then(() => { console.log("connected successful to DB") }).catch(err => { console.log(err); })
 
