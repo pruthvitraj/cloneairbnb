@@ -1,6 +1,10 @@
 services:
   - type: web
-    name: AirClone 
+    name: cloneairbnb
     env: node
-    buildCommand: npm install --legacy-peer-deps && npm run build
+    branch: main
+    # buildCommand: npm install
+    
     startCommand: npm start
+    autoDeploy: true
+    plan: free
