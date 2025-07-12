@@ -19,7 +19,7 @@ const Review = require("./new_data/review");
 const login = require("./new_data/login");
 const reviews = require("./route/reviews");
 const Logincontroller = require("./controllers/logincontroller.js");
-const Listingcontroller = require(process.env.Database_url_atlas);
+const Listingcontroller = require("./controllers/showlistcontroller.js");
 const { name } = require("ejs");
 const { fail } = require("assert");
 const { storage } = require("./cloudconfig.js"); // Import storage correctly
@@ -83,7 +83,7 @@ app.use("/showlist/:id", reviews);
 // connection of monogodb;
 main().then(() => { console.log("connected successful to DB") }).catch(err => { console.log(err); })
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/showlist')
+    await mongoose.connect(process.env.Database_url_atlas)
 }
 
 // creating function for error handling
